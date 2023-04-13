@@ -37,6 +37,48 @@ module.exports = app => {
       }
     )
   )
+
+  // Set up facebook strategy
+  passport.use(
+    new FacebookStrategy(
+      {
+        clientID: process.env.FACEBOOK_ID,
+        clientSecret: process.env.FACEBOOK_SECRET,
+        callbackURL: process.env.FACEBOOK_CALLBACK,
+        profileFields: ['id', 'email', 'displayName', 'picture.type(large)']
+      },
+      async (accessToken, refreshToken, profile, done) => {
+        const { email, name, id, picture } = profile._json
+
+        try {
+          // User's facebookId or email must be unique
+          let user = await User.findOne({
+            $or: [{ email }, { facebookId: id }]
+          })
+          if (!user) {
+            const randomPassword = Math.random().toString(36).slice(-8)
+
+            user = await User.create({
+              name,
+              email,
+              password: bcrypt.hashSync(
+                randomPassword,
+                bcrypt.genSaltSync(10),
+                null
+              ),
+              facebookId: id,
+              avatar: picture.data.url || `https://robohash.org/${name}`
+            })
+          }
+          return done(null, user)
+        } catch (err) {
+          done(err)
+        }
+      }
+    )
+  )
+
+
   passport.serializeUser((user, done) => {
     done(null, user.id)
   })
