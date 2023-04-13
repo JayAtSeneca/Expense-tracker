@@ -1,0 +1,167 @@
+{
+  "results": [
+    {
+      "type": "revenue",
+      "name": "salary",
+      "category": "Revenue",
+      "amount": 60,
+      "date": "2021-03-01"
+    },
+    {
+      "type": "expense",
+      "name": "breakfast",
+      "category": "Food",
+      "amount": 60,
+      "date": "2020-01-01",
+      "merchant": "Harbs"
+    },
+    {
+      "type": "expense",
+      "name": "bus",
+      "category": "Transportation",
+      "amount": 30,
+      "date": "2020-01-01"
+    },
+    {
+      "type": "expense",
+      "name": "movie",
+      "category": "Entertainment",
+      "amount": 230,
+      "date": "2020-01-01",
+      "merchant": "Xinyi Vieshow"
+    },
+    {
+      "type": "expense",
+      "name": "electricity bill",
+      "category": "Home",
+      "amount": 1000,
+      "date": "2020-01-01"
+    },
+    {
+      "type": "expense",
+      "name": "secret",
+      "category": "Other",
+      "amount": 10000,
+      "date": "2020-03-01"
+    },
+    {
+      "type": "expense",
+      "name": "dinner",
+      "category": "Food",
+      "amount": 1800,
+      "date": "2021-03-01",
+      "merchant": "Food Paradise"
+    },
+    {
+      "type": "revenue",
+      "name": "salary",
+      "category": "Revenue",
+      "amount": 60,
+      "date": "2021-03-01"
+    },
+    {
+      "type": "expense",
+      "name": "breakfast",
+      "category": "Food",
+      "amount": 60,
+      "date": "2020-03-01",
+      "merchant": "Harbs"
+    },
+    {
+      "type": "expense",
+      "name": "bus",
+      "category": "Transportation",
+      "amount": 30,
+      "date": "2020-03-01"
+    },
+    {
+      "type": "expense",
+      "name": "movie",
+      "category": "Entertainment",
+      "amount": 230,
+      "date": "2020-01-01",
+      "merchant": "Xinyi Vieshow"
+    },
+    {
+      "type": "expense",
+      "name": "electricity bill",
+      "category": "Home",
+      "amount": 1000,
+      "date": "2020-01-01"
+    },
+    {
+      "type": "expense",
+      "name": "secret",
+      "category": "Other",
+      "amount": 10000,
+      "date": "2020-01-01"
+    },
+    {
+      "type": "expense",
+      "name": "dinner",
+      "category": "Food",
+      "amount": 1800,
+      "date": "2021-03-01",
+      "merchant": "Food Paradise"
+    },
+    {
+      "type": "revenue",
+      "name": "salary",
+      "category": "Revenue",
+      "amount": 60,
+      "date": "2021-03-01"
+    },
+    {
+      "type": "revenue",
+      "name": "bonus",
+      "category": "Revenue",
+      "amount": 500,
+      "date": "2021-03-15"
+    },
+    {
+      "type": "expense",
+      "name": "lunch",
+      "category": "Food",
+      "amount": 120,
+      "date": "2021-03-15",
+      "merchant": "McDonald's"
+    },
+    {
+      "type": "expense",
+      "name": "bus",
+      "category": "Transportation",
+      "amount": 20,
+      "date": "2021-03-15"
+    },
+    {
+      "type": "expense",
+      "name": "movie",
+      "category": "Entertainment",
+      "amount": 150,
+      "date": "2021-03-15",
+      "merchant": "Cineplex"
+    },
+    {
+      "type": "expense",
+      "name": "electricity bill",
+      "category": "Home",
+      "amount": 800,
+      "date": "2021-03-15"
+    },
+    {
+      "type": "expense",
+      "name": "gift",
+      "category": "Other",
+      "amount": 50,
+      "date": "2021-03-15"
+    },
+    {
+      "type": "expense",
+      "name": "dinner",
+      "category": "Food",
+      "amount": 200,
+      "date": "2021-03-15",
+      "merchant": "Pizza Hut"
+    }
+  ]
+}
