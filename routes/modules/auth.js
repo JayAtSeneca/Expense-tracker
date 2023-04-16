@@ -22,4 +22,6 @@ router.get(
       successRedirect: '/',
       failureRedirect: '/users/login'
     })
-  )
+)
+
+router.get('/facebook/delete', authenticator, userController.deleteUser)
