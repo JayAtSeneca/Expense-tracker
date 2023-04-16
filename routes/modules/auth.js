@@ -15,3 +15,11 @@ router.get(
     scope: ['email', 'public_profile']
   })
 )
+
+router.get(
+    '/facebook/callback',
+    passport.authenticate('facebook', {
+      successRedirect: '/',
+      failureRedirect: '/users/login'
+    })
+  )
