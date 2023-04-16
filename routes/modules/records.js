@@ -8,6 +8,7 @@ const recordController = require('../../controllers/recordController')
 router.get('/', recordController.getRecords)
 router.get('/new', recordController.createRecord)
 router.post('/', recordController.postRecord)
+router.get('/:type', recordController.getRecords)
 
 // Export router
 module.exports = router
