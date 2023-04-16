@@ -12,6 +12,7 @@ router.get('/:type', recordController.getRecords)
 
 router.get('/:id/edit', recordController.editRecord)
 router.put('/:id', recordController.putRecord)
+router.delete('/:id', recordController.deleteRecord)
 
 // Export router
 module.exports = router
