@@ -25,3 +25,11 @@ router.get(
 )
 
 router.get('/facebook/delete', authenticator, userController.deleteUser)
+
+router.get(
+    '/google',
+    passport.authenticate('google', {
+      scope: ['profile', 'email']
+    })
+)
+  
