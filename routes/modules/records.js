@@ -11,6 +11,7 @@ router.post('/', recordController.postRecord)
 router.get('/:type', recordController.getRecords)
 
 router.get('/:id/edit', recordController.editRecord)
+router.put('/:id', recordController.putRecord)
 
 // Export router
 module.exports = router
