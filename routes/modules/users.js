@@ -9,6 +9,15 @@ const userController = require('../../controllers/userController')
 
 // Routes
 router.get('/login', userController.getLoginPage)
+router.post(
+    '/login',
+    passport.authenticate('local', {
+      successRedirect: '/',
+      failureRedirect: '/users/login',
+      failureFlash: true
+    })
+  )
+  
 
 // Export router
 module.exports = router
