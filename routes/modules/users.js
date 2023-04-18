@@ -17,7 +17,7 @@ router.post(
       failureFlash: true
     })
   )
-  
+router.get('/register', userController.getRegisterPage)
 
 // Export router
 module.exports = router
