@@ -25,5 +25,15 @@ router.get('/logout', userController.logout)
 router.get('/profile', authenticator, userController.getUserProfile)
 router.get('/edit', authenticator, userController.editUserProfile)
 
+router.put(
+    '/profile',
+    authenticator,
+    upload.single('image'),
+    userController.putUserProfile
+  )
+  
+  router.put('/budget', authenticator, userController.putBudget)
+  
+
 // Export router
 module.exports = router
