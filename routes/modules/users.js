@@ -18,6 +18,7 @@ router.post(
     })
   )
 router.get('/register', userController.getRegisterPage)
+router.post('/register', userController.register)
 
 // Export router
 module.exports = router
