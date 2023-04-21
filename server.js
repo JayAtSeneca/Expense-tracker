@@ -20,13 +20,7 @@ const PORT = process.env.PORT;
 const app = express();
 
 // Set up template engine
-app.engine(
-  "hbs",
-  exphbs({
-    defaultLayout: "main",
-    extname: ".hbs",
-  })
-);
+app.engine('.hbs', exphbs.engine({ extname: '.hbs', defaultLayout: "main"}));
 app.set("view engine", "hbs");
 
 // Handle session
