@@ -60,6 +60,11 @@ app.use((req, res, next) => {
 // Direct request to routes/index.js
 app.use(routes);
 
+// Handle 404 errors
+app.use((req, res, next) => {
+  res.status(404).render('404');
+});
+
 // Start and listen on the Express server
 app.listen(PORT, () => {
   console.log(`App is running on http://localhost:${PORT}`);
