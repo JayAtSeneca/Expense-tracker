@@ -17,29 +17,29 @@ router.get(
 )
 
 router.get(
-    '/facebook/callback',
-    passport.authenticate('facebook', {
-      successRedirect: '/',
-      failureRedirect: '/users/login'
-    })
+  '/facebook/callback',
+  passport.authenticate('facebook', {
+    successRedirect: '/',
+    failureRedirect: '/users/login'
+  })
 )
 
 router.get('/facebook/delete', authenticator, userController.deleteUser)
 
 router.get(
-    '/google',
-    passport.authenticate('google', {
-      scope: ['profile', 'email']
-    })
+  '/google',
+  passport.authenticate('google', {
+    scope: ['profile', 'email']
+  })
 )
 
 router.get(
-    '/google/callback',
-    passport.authenticate('google', {
-      successRedirect: '/',
-      failureRedirect: '/users/login'
-    })
-  )
-  
-  // Export router
+  '/google/callback',
+  passport.authenticate('google', {
+    successRedirect: '/',
+    failureRedirect: '/users/login'
+  })
+)
+
+// Export router
 module.exports = router
